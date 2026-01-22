@@ -21,11 +21,16 @@
     <script type="text/javascript" src="//js.staging-callrail.com/companies/651464618/302db305bdafd778af67/12/swap.js"></script> 
 
     <h1>Typeform</h1>
-    <div data-tf-live="01KFHYPGQV328P00EKVCXZ0DVM" data-tf-on-submit="submit"></div>
-    <script>
-        function submit({ formId, responseId }) {
-          CallTrkSwap.typeformSubmit({ formId, responseId });
-        }
-    </script>
+        <script>
+            function submit({ formId, responseId }) {
+              CallTrkSwap.typeformSubmit({ formId, responseId });
+            }
+        </script>
+        <div 
+            data-tf-widget="01KFHYPGQV328P00EKVCXZ0DVM" 
+            data-tf-on-submit="submit" 
+            style="width: 100%; height: 500px;"
+        ></div>
+    <script src="//embed.typeform.com/next/embed.js"></script>
 </body>
 </html>
