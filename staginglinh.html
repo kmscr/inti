@@ -23,7 +23,7 @@
     <h4>CallRail Custom Form</h4>
     <div id="cr-form-FOR019c31bc2c7076d7bf145a8321722f4c"></div>
     <h4>Typeform External Form</h4>
-    <div data-tf-live="01KFFB7TKCY5TFGC4ZCE81JRYK"></div><script src="//embed.typeform.com/next/embed.js"></script>
+    <div data-tf-live="01KFFB7TKCY5TFGC4ZCE81JRYK" data-tf-on-submit="submit"></div><script src="//embed.typeform.com/next/embed.js"></script>
     <script>
         function submit({
             formId,
@@ -35,6 +35,11 @@
             });
         }
     </script> 
+    <script>
+function submit({ formId, responseId }) {
+  CallTrkSwap.typeformSubmit({ formId, responseId });
+}
+</script>
     <script type="text/javascript" src="//js.staging-callrail.com/companies/792673703/457e6f2ff991137215f5/12/swap.js"></script>  
 </body>
 
